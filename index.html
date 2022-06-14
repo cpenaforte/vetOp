@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  <py-env>
+    - numpy
+    - paths:
+      - ./Modules/UniOp.py
+      - ./Modules/DuoOp.py
+      - ./vetOp.py
+  </py-env>
+  <link rel="stylesheet" href="./assets/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vetOp Web</title>
+</head>
+<body>
+  <h1 id="title">vetOp Web</h1>
+  <form id="form" onsubmit="return false">
+    <select name="operation-type" id="selector">
+      <option id="Op1" value="1 Vector Operations" >1 Vector Operations</option>
+      <option id="Op2" value="2 Vectors Operations" >2 Vectors Operations</option>
+    </select>
+    <input type="text" id="input1" placeholder="Type the first vector (example: [1,2,3])" onfocus="this.value='';">
+    <input type="text" id="input2" placeholder="Type the second vector (example: [1,2,3])" onfocus="this.value='';">
+    <button id="submit-button" type="submit" pys-onClick="submit">submit</button>
+  </form>
+  <div id="output-div"><p id="output"></p></div>
+  <py-script>
+import DuoOp as duo
+import UniOp as uno
+import vetOp as vo
+
+def submit(*args,**kwargs):
+  u = document.getElementById("input1").value
+  if document.getElementById("selector").value == "1 Vector Operations":
+    function = document.getElementById("selector1").value
+    if function == "rotation":
+      axle = document.getElementById("selector3").value
+      angle = document.getElementById("angle").value
+    result = vo.main(1,function,u,'',axle,angle)
+  elif document.getElementById("selector").value == "2 Vectors Operations":
+    v = document.getElementById("input2").value
+    function = document.getElementById("selector2").value
+    result = vo.main(2,function,u,v)
+  pyscript.write("output",result)
+
+  </py-script>
+  <script src="./assets/scripts.js"></script>
+</body>
+</html>
