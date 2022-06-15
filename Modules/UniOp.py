@@ -1,5 +1,3 @@
-#Programa de Carlos Penaforte
-#Esse programa realiza a rotacao de um conjunto de pontos em relacao a um eixo cartesiano
 import numpy as np
 
 class UniOp(object):
@@ -8,7 +6,6 @@ class UniOp(object):
         self.u = np.array(u)
 
     def vecRot(self,radAngle,axle):
-        #Realiza rotacao em torno do eixo dado no sentido anti-horario
         c = np.cos(float(radAngle))
         s = np.sin(float(radAngle))
 

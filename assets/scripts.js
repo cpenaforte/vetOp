@@ -4,6 +4,7 @@ const selector1 = document.createElement("select");
 const op11 = document.createElement("option");
 const button = document.getElementById("submit-button");
 const form = document.getElementById("form");
+const container = document.getElementById("container");
 const text = document.createTextNode("Vector Rotation");
 
 op11.setAttribute("value","rotation");
@@ -69,26 +70,26 @@ inputAngle.setAttribute("placeholder","Type the rotation angle in radians");
 inputAngle.setAttribute("onfocus","this.value='';");
 
 
-form.insertBefore(selector1,button);
+container.insertBefore(selector1,null);
 form.insertBefore(selector3,button);
 form.insertBefore(inputAngle,button);
   
 function changeListener(){
   var value = this.value;
     
-  if (value == "1 Vector Operations"){
+  if (value == "Single Vector"){
     input2.style.display = "none";
 
-    form.insertBefore(selector1,button);
+    container.insertBefore(selector1,null);
     form.insertBefore(selector3,button);
     form.insertBefore(inputAngle,button);
 
     form.removeChild(selector2);
 
-  }else if (value == "2 Vectors Operations"){
+  }else if (value == "Double Vector"){
     input2.style.display = "flex";
 
-    form.removeChild(selector1);
+    container.removeChild(selector1);
     form.removeChild(selector3);
     form.removeChild(inputAngle);
 

@@ -1,21 +1,27 @@
 # VetOp
 
-Um programa que contém diversas operações com vetores.
+This program is intended to be a facilitator for operations between vectors, giving the answers instantly and saving many hours of hand calculation by the click of a button.
 
-## Execução
-Para executar, inicialize o aplicativo VetOp.py na pasta raíz.
+## Execution
+To start the program, access the site [vetOp Web](https://carlospenaforte.github.io/vetOp)
 
-## Operações contidas:
+## Operations:
+### Single Vector Operations
+ - **Vector Rotation**: This program results on the counterclockwise rotation of a vector given. To use the program, type the vector, choose an axle to rotate around and type the angle of rotation.
 
- - _Rotação de vetores_: O programa roda com interação do usuário, sendo necessário dar entrada nas coordenadas do vetor, o eixo de rotação e o ângulo de rotação (no sentido anti-horário) de forma sequencial. Ao final do programa o novo vetor será printado na tela. Novas iterações dependem da resposta do usuário.
+### Double Vector Operations
+ - **Addition**: Results on the addition of the two vector entered.
+ - **Subtraction**: Results on the subtraction of the two vectors entered.
+ - **Scalar Product**: Results on the scalar product of the two vectors entered.
+ - **Vectorial Product**: Results on the vectorial product of the two vectors entered.
 
-## Requisitos
- - [Python 2](https://www.python.org/downloads/release/python-2718/)
- - Módulo [numpy](https://data-flair.training/blogs/install-numpy/)
+## Requirements
+ - [Python 3](https://www.python.org/downloads)  
+ - Module [numpy](https://data-flair.training/blogs/install-numpy/)  
 
-### Crédito:
+### Credits:
 
-Esse repositório foi feito por Carlos Penaforte
+This repository is owned by Carlos Daniel Penafort de Souza.
 
    
 

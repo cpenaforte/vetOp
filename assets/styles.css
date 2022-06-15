@@ -9,7 +9,7 @@ body{
 }
 
 #title{
-  font-size: 6em;
+  font-size: 5em;
   font-weight: bold;
   color: rgb(220,135,45);
 }
@@ -48,7 +48,7 @@ input{
   text-transform: uppercase;
   font-weight: 500;
   border-radius: 3px;
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 2px 2px 2px black;
 }
 
 #submit-button:hover{

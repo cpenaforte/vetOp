@@ -19,10 +19,12 @@
 <body>
   <h1 id="title">vetOp Web</h1>
   <form id="form" onsubmit="return false">
-    <select name="operation-type" id="selector">
-      <option id="Op1" value="1 Vector Operations" >1 Vector Operations</option>
-      <option id="Op2" value="2 Vectors Operations" >2 Vectors Operations</option>
-    </select>
+    <div id="container">
+      <select name="operation-type" id="selector">
+        <option id="Op1" value="Single Vector" >Single Vector</option>
+        <option id="Op2" value="Double Vector" >Double Vector</option>
+      </select>
+    </div>
     <input type="text" id="input1" placeholder="Type the first vector (example: [1,2,3])" onfocus="this.value='';">
     <input type="text" id="input2" placeholder="Type the second vector (example: [1,2,3])" onfocus="this.value='';">
     <button id="submit-button" type="submit" pys-onClick="submit">submit</button>
