@@ -84,7 +84,7 @@ function changeListener(){
     form.insertBefore(selector3,button);
     form.insertBefore(inputAngle,button);
 
-    form.removeChild(selector2);
+    container.removeChild(selector2);
 
   }else if (value == "Double Vector"){
     input2.style.display = "flex";
@@ -93,7 +93,7 @@ function changeListener(){
     form.removeChild(selector3);
     form.removeChild(inputAngle);
 
-    form.insertBefore(selector2,button);
+    container.insertBefore(selector2,null);
     }
     
   }
