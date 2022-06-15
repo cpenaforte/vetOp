@@ -20,11 +20,11 @@ const op23 = document.createElement("option");
 const op24 = document.createElement("option");
 
 op21.setAttribute("value","add");
-const text1 = document.createTextNode("Vector Sum");
+const text1 = document.createTextNode("Addition");
 op21.appendChild(text1);
 
 op22.setAttribute("value","sub");
-const text2 = document.createTextNode("Vector Subtract");
+const text2 = document.createTextNode("Subtraction");
 op22.appendChild(text2);
 
 op23.setAttribute("value","sca");
