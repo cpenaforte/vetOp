@@ -37,13 +37,13 @@ import vetOp as vo
 
 def submit(*args,**kwargs):
   u = document.getElementById("input1").value
-  if document.getElementById("selector").value == "1 Vector Operations":
+  if document.getElementById("selector").value == "Single Vector":
     function = document.getElementById("selector1").value
     if function == "rotation":
       axle = document.getElementById("selector3").value
       angle = document.getElementById("angle").value
-    result = vo.main(1,function,u,'',axle,angle)
-  elif document.getElementById("selector").value == "2 Vectors Operations":
+      result = vo.main(1,function,u,'',axle,angle)
+  elif document.getElementById("selector").value == "Double Vector":
     v = document.getElementById("input2").value
     function = document.getElementById("selector2").value
     result = vo.main(2,function,u,v)
